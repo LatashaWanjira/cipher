@@ -1,14 +1,24 @@
 var sentence = prompt("Please enter a sentence:");
-var letter = function(firstLetter, lastLetter) {
+var lastLetter = sentence.charAt(sentence.length -1).toUpperCase();
+var firstLetter = sentence.charAt(0).toUpperCase();
+var outputSentence = alert((firstLetter + lastLetter));
+var outputSentence2 = alert((lastLetter + firstLetter));
+var numberOfLetters = sentence.charAt((sentence.length /2).toFixed());
+
+// combining first and last letter variables
+function combine() {
     return firstLetter + lastLetter;
 };
-var firstLetter = sentence.charAt(0);
-var lastLetter = sentence.charAt(str.length -1);
-var outputSentence = alert((firstLetter + lastLetter).toUpperCase());
-var reverseletter = function(firstLetter, lastLetter) {
+
+function reverseCombine() {
     return lastLetter + firstLetter;
 };
-var outputSentence2 = alert((lastLetter + firstLetter).toUpperCase());
-var outputSentence3 = function(outputSentence, outputSentence2) {
-    return outputSentence, outputSentence2;
+
+function bothCombine() {
+  return sentence + combine() + reverseCombine();
+
+};
+
+function countLetters() {
+    return numberOfLetters + bothCombine();
 };
