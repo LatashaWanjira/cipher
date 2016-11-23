@@ -22,3 +22,8 @@ function bothCombine() {
 function countLetters() {
     return numberOfLetters + bothCombine();
 };
+
+function reverseString() {
+    return countLetters().split("").reverse().join("");
+}
+reverseString();
